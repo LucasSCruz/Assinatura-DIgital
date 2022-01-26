@@ -1,0 +1,191 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ededed;
+  }
+  
+  .app {
+    padding: 10vh 10vw 10vh 10vw;
+  }
+  
+  .content {
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  .header h1 {
+    font-size: 56px;
+    margin: 0;
+    font-weight: 400;
+  }
+  .header p {
+    font-size: 32px;
+    margin: 0;
+    font-weight: 500;
+  }
+  
+  
+  .forms {
+    margin-top: 1vh;
+    padding: 5vh 12vw 5vh 1vw;
+    align-items: center;
+  }
+  
+  .form-input {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vh 1vw 1vh 1vw;
+    text-align: right;
+  }
+  .form-input p {
+    width: 18%;
+  }
+  label {
+    color: #5b3314;
+  }
+  input,
+  select {
+    outline: none;
+    box-sizing: border-box;
+    border: 2px solid #0084ff;
+    border-radius: 10px;
+    height: 40px;
+    background-color: #e8eef3;
+    color: #020202;
+    width: 80%;
+    text-align: center;
+  }
+  input:focus,
+  select:focus {
+    outline: none;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
+  }
+  button {
+    border-radius: 10px;
+    border: 0;
+    background-color: #0066ff;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.25);
+    color: #ffffff;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 500ms;
+  }
+  
+  /* Botao */
+  .center-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+  }
+  button:active {
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 2px 2px 20px rgba(0, 0, 0, 0.5);
+  }
+  button h2 {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  /* Assinatura */
+  .assinatura-wrapper {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .assinatura-div {
+    background-color: #ffffff;
+    display: inline-block;
+  }
+  
+  .card {
+    background-color: #ffffff;
+    width: 530px;
+    height: 170px;
+    display: grid;
+    grid-template-areas: 
+      "img conteudo lexos borda";
+    grid-template-columns: 1.3fr 1fr 1fr 10px ;
+  }
+
+  .imgs {
+    grid-area: img;
+    position: relative;
+  }
+
+  .fundo-azul {
+    height: 170px;
+    /* width: auto; */
+  }
+
+  #nome-assinatura {
+    margin: 10px 0px 0px 0px;
+    font-size: 18px;
+  }
+
+  #cargo-assinatura {
+    margin: -5px 0px;
+    font-size: 14px;
+  }
+
+  .lexos {
+    grid-area: lexos;
+  }
+
+  .lexos-conteudo {
+    display: grid;
+    grid-area: 
+      "logo logo logo"
+      "insta link face";
+  }
+
+  .borda {
+    grid-area: borda;
+    
+  }
+
+  .borda img {
+    min-height: 170px;
+    margin: 0.4px
+  }
+
+/* 
+  .imgs img:first-child {
+    width: auto;
+    height: 100%;
+  }
+
+  .imgs img:last-child {
+    width: auto;
+    height: 100%;
+  } */
+
+  .conteudo {
+    display: grid;
+    grid-template-rows: 40px 100px
+  }
+
+#cargo-assinatura::after {
+    display: block;
+    content: "";
+    /* border-top: .2rem solid black; */
+    border-radius: 5px;
+    width: 100%;
+    background-color: #0066ff;
+    height: 2.5px;
+    margin: 20px 0;
+    transform: translateY(-1rem);
+}
+  
